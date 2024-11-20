@@ -44,7 +44,7 @@ function Login({ onLoginSuccess }) {
     return (
         <div className="login-container">
             <img src={loginpic} alt="Logo" />
-            <h1>Join the Fun</h1>
+            <h3>Join the Fun</h3>
             <div className="form-section">
                 <form onSubmit={handleSubmit}>
                     <div className="input-group">

@@ -1,7 +1,7 @@
 .questions-container {
-    height: 550px;
-    width: 350px;
-    padding: 10px;
+    height: 610px;
+    width: 330px;
+    padding: 5px;
     background-color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
@@ -33,7 +33,7 @@ p {
     overflow: hidden;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
@@ -44,10 +44,10 @@ p {
 .question-image {
     width: 80px;
     height: 80px;
+    padding: 5px;
     border-radius: 10%;
     margin-right: 0;
     margin-left: 0;
-    display: inline-block;
 }
 
 .question-details {
@@ -70,8 +70,9 @@ p {
 }
 
 .friend-logo {
-    width: 15px;
-    height: 15px;
+    padding: 5px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    border: 1px solid #ddd;
+    display: inline-block;
 }
