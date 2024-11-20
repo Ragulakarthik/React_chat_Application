@@ -21,20 +21,26 @@ a:hover {
     color: #0056b3;
 }
 
+.questionHeadDiv {
+    margin-top: 3%;
+}
+
 .questionHead {
-    font-size: 15px;
+    font-size: 17px;
     color: #333;
     padding-left: 28%;
     font-weight: bold;
+
 }
 
 .questionDiv {
     height: 150px;
     width: 330px;
-    background-image: url('./questionDiv.png'); 
+    background-image: url('./questionDiv.png');
     background-size: cover;
     background-position: center;
     color: white;
+    margin-top: 3%;
 }
 
 .question-title {
@@ -60,7 +66,7 @@ a:hover {
 
 .message {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     align-items: center;
     padding: 10px 15px;
     margin-bottom: 8px;
