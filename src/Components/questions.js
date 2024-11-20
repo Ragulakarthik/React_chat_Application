@@ -1,8 +1,10 @@
 import React from 'react';
 import './questions.css';
 import questionsImage from './questionsImage.png'; // Replace with your image path
+import { useNavigate } from 'react-router-dom';
 
 function Questions() {
+    const navigate = useNavigate();
     const questions = [
         {
             id: 1,
@@ -101,19 +103,22 @@ function Questions() {
             friendLogos: [questionsImage, questionsImage, questionsImage],
         }
     ];
+    const handleQuestionClick = (question) => {
+        navigate('/chatScreen', { state: { question } });
+    };
 
     return (
         <div className="questions-container">
-            <center> <h3>QUESTIONS</h3> <hr></hr></center>
+            <center><h3>QUESTIONS</h3><hr /></center>
             PREVIOUS QUESTIONS
             <div className="questions-list">
                 {questions.map((q) => (
-                    <div key={q.id} className="question-card">
+                    <div key={q.id} className="question-card" onClick={() => handleQuestionClick(q)}>
                         <img src={questionsImage} alt="Question" className="question-image" />
                         <div className="question-details">
                             <p className="question-text">{q.question}</p>
                             <p className="friends-info">
-                                <span style={{ color: 'blue', fontSize: '9px' }}>{q.friendsAnswered} of your friends </span> answered this question.
+                                <span style={{ color: 'blue', fontSize: '9px' }}>{q.friendsAnswered} of your friends</span> answered this question.
                                 {q.friendLogos.map((logo, index) => (
                                     <img
                                         key={index}
@@ -130,5 +135,4 @@ function Questions() {
         </div>
     );
 }
-
 export default Questions;
