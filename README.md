@@ -73,17 +73,19 @@ Make sure you have the following installed on your machine:
 
 1. Open **Git Bash** or your preferred terminal.
 2. Clone the repository:
-   ```bash
-   git clone {url}
-3. Navigate to the project directory:
-  ```bash
-  cd {project-directory}
 
-4. Install the required dependencies:
-  ```bash
-  npm install
+   git clone {url}
+   
+3. Navigate to the project directory:
+
+   cd {project-directory}
+
+5. Install the required dependencies:
+
+   npm install
+
 5. Start the application:
-  ```bash
-  npm start
+
+   npm start
 
 Make sure to replace `{url}` with the actual repository URL and `{project-directory}` with the directory name of your project, if necessary.
