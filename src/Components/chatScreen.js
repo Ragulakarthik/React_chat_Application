@@ -8,13 +8,13 @@ function ChatScreen() {
     const questionData = location.state?.question || null;
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
-    const userName = "User"; // Change this to dynamically fetch the username if needed
+    const userName = "You"; // Change this to dynamically fetch the username if needed
 
     // Add a default bot message when a question is loaded
     useEffect(() => {
         if (questionData) {
             setMessages([
-                { text: "Here is some initial information regarding your question.", sender: 'Bot', senderName: 'Bot' }
+                { text: "This is answer is provided by your friends.", sender: 'Bot', senderName: 'Bot' }
             ]);
         }
     }, [questionData]);
@@ -23,7 +23,7 @@ function ChatScreen() {
         if (message.trim()) {
             setMessages([
                 ...messages,
-                { text: message, sender: 'User', senderName: userName }
+                { text: message, sender: 'You', senderName: userName }
             ]);
             setMessage('');
         }
@@ -51,23 +51,24 @@ function ChatScreen() {
                         {messages.map((msg, index) => (
                             <div
                                 key={index}
-                                className={`message-wrapper ${msg.sender === 'User' ? 'user-message' : 'bot-message'}`}
+                                className={`message-wrapper ${msg.sender === 'You' ? 'user-message' : 'bot-message'}`}
                             >
-                                {msg.sender === 'User' ? (
+                                {msg.sender === 'You' ? (
                                     <>
                                         <div className="message user">
                                             <p className="sender-name">{msg.senderName}</p>
                                             <p className="message-text">{msg.text}</p>
                                         </div>
-                                        <img src={userPic} alt="User" className="user-image left" />
+                                        <img src={userPic} alt="You" className="user-image left" />
                                     </>
                                 ) : (
                                     <>
+                                        <img src={userPic} alt="Bot" className="bot-image right" />
                                         <div className="message bot">
                                             <p className="sender-name">{msg.senderName}</p>
                                             <p className="message-text">{msg.text}</p>
                                         </div>
-                                        <img src={userPic} alt="User" className="bot-image right" />
+
                                     </>
                                 )}
                             </div>

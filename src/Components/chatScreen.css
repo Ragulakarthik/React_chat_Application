@@ -119,6 +119,8 @@ a:hover {
     text-align: left;
     font-size: 14px;
     word-break: break-word;
+    top: 0%;
+    padding-top: 0%;
 }
 
 .message-text {
@@ -141,7 +143,7 @@ a:hover {
 
 /* User Message Alignment */
 .user-message {
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: flex-end;
 }
 
