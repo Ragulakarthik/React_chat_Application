@@ -59,3 +59,31 @@ The **ChatScreen** component is the page where users can communicate with the bo
 #### Dependencies:
 - **React Router** for accessing the state passed from the `Questions` component (`useLocation`). 🔄
 - **SVG Icons** for the send button and the back navigation. 🎨
+
+
+# Application Setup and Run Instructions
+
+## Prerequisites
+
+Make sure you have the following installed on your machine:
+- Git
+- Node.js and npm (Node Package Manager)
+
+## Steps to Run the Application
+
+1. Open **Git Bash** or your preferred terminal.
+2. Clone the repository:
+   ```bash
+   git clone {url}
+3. Navigate to the project directory:
+  ```bash
+  cd {project-directory}
+
+4. Install the required dependencies:
+  ```bash
+  npm install
+5. Start the application:
+  ```bash
+  npm start
+
+Make sure to replace `{url}` with the actual repository URL and `{project-directory}` with the directory name of your project, if necessary.
