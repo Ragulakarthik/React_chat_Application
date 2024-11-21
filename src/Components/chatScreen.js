@@ -8,10 +8,11 @@ function ChatScreen() {
     const questionData = location.state?.question || null;
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
+    const userName = "User"; // You can change this to dynamically fetch the username if needed
 
     const handleSendMessage = () => {
         if (message.trim()) {
-            setMessages([...messages, { text: message, sender: 'User' }]);
+            setMessages([...messages, { text: message, sender: 'User', senderName: userName }]);
             setMessage('');
         }
     };
@@ -36,13 +37,19 @@ function ChatScreen() {
                     </div>
                     <div className="chat-messages">
                         {messages.map((msg, index) => (
-                            <div key={index} className="message-wrapper">
+                            <div
+                                key={index}
+                                className={`message-wrapper ${msg.sender === 'User' ? 'user-message' : ''}`}
+                            >
                                 {msg.sender === 'User' && (
-                                    <img src={userPic} alt="User" className="user-image" />
+                                    <>
+                                        <div className="message user">
+                                            <p className="sender-name">{msg.senderName}</p>
+                                            <p className="message-text">{msg.text}</p>
+                                        </div>
+                                        <img src={userPic} alt="User" className="user-image right" />
+                                    </>
                                 )}
-                                <div className={`message ${msg.sender.toLowerCase()}`}>
-                                    <span>{msg.text}</span>
-                                </div>
                             </div>
                         ))}
                     </div>
