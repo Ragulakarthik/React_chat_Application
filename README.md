@@ -2,6 +2,16 @@
 
 This project is a React-based chat application with functionalities that include a login page, question listings, and a chat interface where users can send and receive messages. It is designed to provide a seamless user experience with a simple and clean UI, and it supports interactions such as validating login credentials, navigating between pages, and communicating through a messaging system.
 
+## Demo Pics
+![image](https://github.com/user-attachments/assets/ae6f1885-2829-43f7-883e-d60aa12f6f89)
+![image](https://github.com/user-attachments/assets/ab8032bf-ef03-4a76-bc06-d0b7e21078d2)
+![image](https://github.com/user-attachments/assets/dff1db5a-625f-428b-a6c2-3128162ca95a)
+![image](https://github.com/user-attachments/assets/bc68199a-1b44-4795-9e09-fb4e646e208f)
+![image](https://github.com/user-attachments/assets/36f71f90-2e8c-43ad-b504-60be4abe3bf0)
+![image](https://github.com/user-attachments/assets/3fef3d05-4cdf-49e5-94d4-b36e7ed2ea1b)
+![image](https://github.com/user-attachments/assets/c8a3ac94-fb68-41a2-b9e0-a02bc5a68f96)
+![image](https://github.com/user-attachments/assets/18df3629-3459-4040-869a-c81256c08588)
+
 ## Components 🧩
 
 ### 1. **Login Component (`Login.js`)** 🔑
