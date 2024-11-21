@@ -45,7 +45,7 @@ function ChatScreen() {
             {questionData && (
                 <>
                     <div className="questionDiv">
-                        <h4 className="question-title">{questionData.question}</h4>
+                        <div className="question-title">{questionData.question}</div>
                     </div>
                     <div className="chat-messages">
                         {messages.map((msg, index) => (
@@ -82,7 +82,7 @@ function ChatScreen() {
                             placeholder="Type your message"
                         />
                         <button onClick={handleSendMessage} className="send-button">
-                            <svg fill="#000000" width="10px" height="10px" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg" transform="rotate(180)">
+                            <svg fill="white" width="12px" height="12px" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg" transform="rotate(180)">
                                 <g id="SVGRepo_bgCarrier" stroke-width="0" />
                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
                                 <g id="SVGRepo_iconCarrier">

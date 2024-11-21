@@ -47,6 +47,9 @@ a:hover {
 }
 
 .question-title {
+    width: 200px;
+    height: 150px;
+    margin-top: 8%;
     font-size: 18px;
     padding: 0 10px;
 }
@@ -107,7 +110,6 @@ a:hover {
     text-align: left;
 }
 
-/* New Bot Message Styling with Black Text */
 .bot-message .message.bot {
     background-color: #ccc;
     color: #333;
