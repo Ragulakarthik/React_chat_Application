@@ -49,6 +49,10 @@ function ChatScreen() {
                 <div className="question-title">{questionData.question}</div>
                 <img src="/images/questionTitle.png" alt="questionTitleImg" />
               </div>
+              <div className="moreQue">
+                <p>View more questions on this topic</p> 
+                <img src="/images/AddButton.png" alt="plusbutton" style={{width:"30px", margin:"0 0 0 20%"}}></img>
+              </div>
               <div className="chat-messages">
                 {messages.map((msg, index) => (
                   <div

@@ -53,6 +53,28 @@ a:hover {
   align-self: flex-end;
 }
 
+.moreQue{
+  max-width: 320px;
+  display: flex;
+  /* flex-direction: column; */
+  border: 1px solid #a4c2e5;
+  background-color: #81B9FA;
+  color: #000000;
+  width: 80%;
+  height: 40px;
+  margin: auto;
+  margin-top: -20px;
+  border-radius: 10px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding: 6px;
+  display: flex;
+  font-size: 12px;
+}
+.moreQue p{
+  margin-top: 5px;
+}
+
 .chat-messages {
   width: 100%;
   display: flex;
