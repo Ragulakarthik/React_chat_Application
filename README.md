@@ -7,10 +7,11 @@ This project is a React-based chat application with functionalities that include
 ![image](https://github.com/user-attachments/assets/ab8032bf-ef03-4a76-bc06-d0b7e21078d2)
 ![image](https://github.com/user-attachments/assets/dff1db5a-625f-428b-a6c2-3128162ca95a)
 ![image](https://github.com/user-attachments/assets/bc68199a-1b44-4795-9e09-fb4e646e208f)
-![image](https://github.com/user-attachments/assets/36f71f90-2e8c-43ad-b504-60be4abe3bf0)
-![image](https://github.com/user-attachments/assets/3fef3d05-4cdf-49e5-94d4-b36e7ed2ea1b)
-![image](https://github.com/user-attachments/assets/c8a3ac94-fb68-41a2-b9e0-a02bc5a68f96)
-![image](https://github.com/user-attachments/assets/18df3629-3459-4040-869a-c81256c08588)
+![image](https://github.com/user-attachments/assets/212efb06-12ff-4f8c-8fb4-5b7691982c3e)
+![image](https://github.com/user-attachments/assets/c41992b1-a43b-457c-9cc3-a97c734e37f9)
+![image](https://github.com/user-attachments/assets/8fd329c0-fb61-4c7e-b411-84249c824ae4)
+
+
 
 ## Components 🧩
 
