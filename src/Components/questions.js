@@ -107,7 +107,7 @@ function Questions() {
     {
       id: 16,
       question:
-        "What is the most valuable lesson you’ve learned from a difficult project or situation?",
+        "What is the most valuable lesson you’ve learned from a situation?",
       friendsAnswered: 11,
       friendLogos: [questionsImage, questionsImage, questionsImage],
     },
