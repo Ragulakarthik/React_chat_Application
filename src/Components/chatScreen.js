@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./chatScreen.css";
 import userPic from "./questionsImage.png";
 
 function ChatScreen() {
   const location = useLocation();
+  const navigate = useNavigate();
   const questionData = location.state?.question || null;
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const userName = "You";
-  
+
   useEffect(() => {
     if (questionData) {
       setMessages([
@@ -37,9 +38,29 @@ function ChatScreen() {
       <div className="row">
         <div className="chat-screen col-12 p-0">
           <div className="questionHeadDiv">
-            <a href="./questions">
-              <img src="/images/BackButton.png" alt="backbutton" />
-            </a>
+            <button
+              onClick={() => navigate("/questions")}
+              className="back-button"
+            >
+              <svg
+                    fill="white"
+                    width="12px"
+                    height="12px"
+                    viewBox="0 0 52 52"
+                    xmlns="http://www.w3.org/2000/svg"
+                    // transform="rotate(180)"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <g id="SVGRepo_iconCarrier">
+                      <path d="M38,52a2,2,0,0,1-1.41-.59l-24-24a2,2,0,0,1,0-2.82l24-24a2,2,0,0,1,2.82,0,2,2,0,0,1,0,2.82L16.83,26,39.41,48.59A2,2,0,0,1,38,52Z" />
+                    </g>
+                  </svg>
+            </button>
             <h3 className="questionHead m-auto">QUESTIONS</h3>
           </div>
           {questionData && (
@@ -49,8 +70,12 @@ function ChatScreen() {
                 <img src="/images/questionTitle.png" alt="questionTitleImg" />
               </div>
               <div className="moreQue">
-                <p>View more questions on this topic</p> 
-                <img src="/images/AddButton.png" alt="plusbutton" style={{width:"30px", margin:"0 0 0 20%"}}></img>
+                <p>View more questions on this topic</p>
+                <img
+                  src="/images/AddButton.png"
+                  alt="plusbutton"
+                  style={{ width: "30px", margin: "0 0 0 20%" }}
+                ></img>
               </div>
               <div className="chat-messages">
                 {messages.map((msg, index) => (
