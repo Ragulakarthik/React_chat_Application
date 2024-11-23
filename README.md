@@ -5,13 +5,12 @@ This project is a React-based chat application with functionalities that include
 Demo Link : https://chat-application-5ph6.onrender.com
 
 ## Demo Pics
-![image](https://github.com/user-attachments/assets/ae6f1885-2829-43f7-883e-d60aa12f6f89)
-![image](https://github.com/user-attachments/assets/ab8032bf-ef03-4a76-bc06-d0b7e21078d2)
-![image](https://github.com/user-attachments/assets/dff1db5a-625f-428b-a6c2-3128162ca95a)
-![image](https://github.com/user-attachments/assets/bc68199a-1b44-4795-9e09-fb4e646e208f)
+![image](https://github.com/user-attachments/assets/38700ab9-b60b-4f0d-8d57-ecc84d7d8c91)
+![image](https://github.com/user-attachments/assets/3a5160b5-3326-4775-90db-68b1d6bb1c9d)
+![image](https://github.com/user-attachments/assets/754989bd-fe87-4f7c-a982-8bc60c370caa)
 ![image](https://github.com/user-attachments/assets/212efb06-12ff-4f8c-8fb4-5b7691982c3e)
-![image](https://github.com/user-attachments/assets/c41992b1-a43b-457c-9cc3-a97c734e37f9)
-![image](https://github.com/user-attachments/assets/8fd329c0-fb61-4c7e-b411-84249c824ae4)
+![image](https://github.com/user-attachments/assets/d86588ab-c283-424d-94e5-9af78410b7f7)
+
 
 
 
