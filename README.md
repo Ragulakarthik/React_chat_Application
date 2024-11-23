@@ -2,7 +2,6 @@
 
 This project is a React-based chat application with functionalities that include a login page, question listings, and a chat interface where users can send and receive messages. It is designed to provide a seamless user experience with a simple and clean UI, and it supports interactions such as validating login credentials, navigating between pages, and communicating through a messaging system.
 
-Demo Link : https://chat-application-5ph6.onrender.com
 
 ## Demo Pics
 ![image](https://github.com/user-attachments/assets/38700ab9-b60b-4f0d-8d57-ecc84d7d8c91)
