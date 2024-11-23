@@ -5,7 +5,6 @@
   flex-direction: column;
 }
 
-/* Hyperlink Styling */
 a {
   font-size: 20px;
   margin-left: 10px;
@@ -35,7 +34,6 @@ a:hover {
   color: #6e6e6e;
 }
 
-/* Question Div Styling */
 .questionDiv {
   background-color: #acd3ff;
   display: flex;
@@ -67,7 +65,6 @@ a:hover {
   flex-grow: 1;
 }
 
-/* Sender Name */
 .sender-name {
   display: block;
   margin-bottom: 2px;
@@ -75,14 +72,12 @@ a:hover {
   color: white;
 }
 
-/* Message Wrapper */
 .message-wrapper {
   display: flex;
   align-items: flex-start;
   margin: 5px 0;
 }
 
-/* Message Text Styling */
 .message-text {
   margin: 0;
   font-size: 14px;
@@ -129,7 +124,6 @@ a:hover {
   color: red;
 }
 
-/* User Message Styling */
 .message.user {
   background-color: #007bff;
   color: white;
@@ -139,13 +133,11 @@ a:hover {
   padding-top: 0%;
 }
 
-/* User Message Alignment */
 .user-message {
   flex-direction: row;
   justify-content: flex-end;
 }
 
-/* User Image Styling */
 .user-image {
   width: 20px;
   height: 20px;
