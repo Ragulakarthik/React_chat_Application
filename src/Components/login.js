@@ -45,8 +45,9 @@ function Login({ onLoginSuccess }) {
       <div className="row">
         <div className="login-container col-12 p-0">
           <div className="imageDiv">
-            <p className="knowyour"> Know Your</p>
-            <p className="friendbetter">Friends Better</p>
+            <div className="text">
+              <p>Know Your Friends Better</p>
+            </div>
             <img src="/images/loginPic.png" alt="loginPic" />
           </div>
           <p className="jointhefun">Join the Fun</p>
@@ -64,26 +65,26 @@ function Login({ onLoginSuccess }) {
                   <span className="error-message">{errors.username}</span>
                 )}
               </div>
-                <div className="password-wrapper">
-                  <input
-                    placeholder="************"
-                    type={showPassword ? "text" : "password"}
-                    value={password}
-                    onChange={handlePasswordChange}
-                    className={errors.password ? "error" : ""}
-                  />
-                  <div
-                    className="eye-icon"
-                    onClick={toggleShowPassword}
-                    aria-hidden="true"
-                  >
-                    {showPassword ? <FaEyeSlash /> : <FaEye />}
-                  </div>
+              <div className="password-wrapper">
+                <input
+                  placeholder="************"
+                  type={showPassword ? "text" : "password"}
+                  value={password}
+                  onChange={handlePasswordChange}
+                  className={errors.password ? "error" : ""}
+                />
+                <div
+                  className="eye-icon"
+                  onClick={toggleShowPassword}
+                  aria-hidden="true"
+                >
+                  {showPassword ? <FaEyeSlash /> : <FaEye />}
                 </div>
-                {errors.password && (
-                  <span className="error-message">{errors.password}</span>
-                )}
-                <br />
+              </div>
+              {errors.password && (
+                <span className="error-message">{errors.password}</span>
+              )}
+              <br />
               <button type="submit">LOGIN</button>
             </form>
           </div>

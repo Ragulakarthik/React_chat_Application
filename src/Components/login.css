@@ -12,6 +12,9 @@ body #root{
 
 .login-container {
     height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border-radius: 20px;
     text-align: center;
@@ -20,19 +23,18 @@ body #root{
 
 .imageDiv {
     display: flex;
+    width: 100%;
+    align-items: center;
+    /* flex-direction: column; */
     justify-content: center;
     height: 75vh;
     background-color: #4592EC;
     border-radius: 0 0 35% 35%;
 }
 
-.knowyour {
-    font-size: 24px;
-    font-weight: 600;
-    color:white;
-}
-
-.friendbetter {
+.imageDiv p {
+    display: flex;
+    align-self: center;
     font-size: 24px;
     font-weight: 600;
     color:white;
@@ -52,7 +54,7 @@ body #root{
 }
 
 .input-group {
-    /* display: flex; */
+    display: flex;
     width: 75%;
     flex-direction: column;
     margin-bottom: 10px;
@@ -66,14 +68,6 @@ body #root{
     border-radius: 50px;
     outline: none;
     transition: border-color 0.3s ease;
-}
-
-.password-wrapper input {
-    width: 75%;
-    padding: 8px;
-    font-size: 14px;
-    border: 2px solid #007bff;
-    border-radius: 50px;
 }
 
 .input-group input.error {
@@ -94,10 +88,14 @@ body #root{
     align-items: center;
 }
 
-.password-wrapper input.error {
+.password-wrapper input {
+    width: 75%;
+    padding: 8px;
+    font-size: 14px;
+    border: 2px solid #007bff;
     border-radius: 50px;
-    border-color: red;
 }
+
 .password-wrapper .eye-icon {
     position: absolute;
     display: flex;
@@ -107,6 +105,11 @@ body #root{
     flex-direction: column;
     cursor: pointer;
     color: #4592EC;
+}
+
+.password-wrapper input.error {
+    border-radius: 50px;
+    border-color: red;
 }
 
 button {
@@ -124,5 +127,5 @@ button {
 
 button:hover {
     background-color: #0056b3;
-    transform: scale(1.05); /* Slight scale effect on hover */
+    transform: scale(1.05);
 }
