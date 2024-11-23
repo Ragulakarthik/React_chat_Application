@@ -8,9 +8,8 @@ function ChatScreen() {
   const questionData = location.state?.question || null;
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
-  const userName = "You"; // Change this to dynamically fetch the username if needed
-
-  // Add a default bot message when a question is loaded
+  const userName = "You";
+  
   useEffect(() => {
     if (questionData) {
       setMessages([

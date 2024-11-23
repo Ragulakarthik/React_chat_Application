@@ -20,25 +20,27 @@ function Login({ onLoginSuccess }) {
 
   const validateForm = () => {
     const newErrors = {};
-
+  
     if (!username) {
       newErrors.username = "Username can't be empty.";
-    } else if (!/^[A-Za-z]+$/.test(username)) {
+    } else if (!/^[A-Za-z\s]+$/.test(username)) {
       newErrors.username = "Username can only contain alphabetic characters.";
     }
-
+  
     if (!password) {
       newErrors.password = "Password can't be empty.";
     } else if (
       password.length < 8 ||
-      !/[A-Z a-z 0-9 !@#$%^&* ]/.test(password)
+      !/[A-Z]/.test(password) ||           // At least one uppercase letter
+      !/[0-9]/.test(password) ||           // At least one number
+      !/[!@#$%^&*]/.test(password)         // At least one special character
     ) {
-      newErrors.password = "Password must be at least 8 characters";
+      newErrors.password = "Password must be at least 8 characters, and include an uppercase letter, a number, and a special character.";
     }
-
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
+  
 
   return (
     <div className="container p-0">

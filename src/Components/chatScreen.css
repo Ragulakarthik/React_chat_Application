@@ -44,7 +44,7 @@ a:hover {
   font-size: 22px;
   padding: 10px 10px;
   font-weight: 700;
-  margin: 10px 10px;
+  margin: 10px 10px 0 30px;
 }
 
 .questionDiv img {
@@ -53,25 +53,23 @@ a:hover {
   align-self: flex-end;
 }
 
-.moreQue{
+.moreQue {
   max-width: 320px;
   display: flex;
-  /* flex-direction: column; */
   border: 1px solid #a4c2e5;
-  background-color: #81B9FA;
+  background-color: #81b9fa;
   color: #000000;
   width: 80%;
   height: 40px;
   margin: auto;
   margin-top: -20px;
   border-radius: 10px;
-  /* align-items: center; */
-  /* justify-content: center; */
   padding: 6px;
   display: flex;
   font-size: 12px;
 }
-.moreQue p{
+
+.moreQue p {
   margin-top: 5px;
 }
 
@@ -119,7 +117,7 @@ a:hover {
 
 .message.bot {
   color: black;
-  background: #EFEFEF;
+  background: #efefef;
   padding: 5px 10px;
   border-radius: 10px;
   max-width: 75%;
@@ -183,10 +181,10 @@ a:hover {
 }
 
 .input-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
 }
 
 .input-section input {
@@ -210,5 +208,5 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  margin-bottom: 8px;
 }
