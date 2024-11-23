@@ -46,7 +46,7 @@ function Login({ onLoginSuccess }) {
         <div className="login-container col-12 p-0">
           <div className="imageDiv">
             <div className="text">
-              <p>Know Your Friends Better</p>
+              <p>Know Your <br /> Friends Better</p>
             </div>
             <img src="/images/loginPic.png" alt="loginPic" />
           </div>

@@ -23,9 +23,9 @@ body #root{
 
 .imageDiv {
     display: flex;
-    width: 100%;
+    width: 100vw;
     align-items: center;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: center;
     height: 75vh;
     background-color: #4592EC;
@@ -43,7 +43,6 @@ body #root{
 .imageDiv img{
     display: flex;
     height: 250px;
-    align-self: flex-end;
     justify-content: center;
 }
 
